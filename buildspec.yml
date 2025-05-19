@@ -10,11 +10,9 @@ phases:
 
   build:
     commands:
-      - echo Build complete
+      - echo Zipping project booom boom...
+      - zip -r nodejs-app.zip ./*
 
 artifacts:
-  base-directory: .  # Ensure you're zipping the full root directory
   files:
-    - '**/*'
-    - '.*'
-  discard-paths: no
+    - nodejs-app.zip
