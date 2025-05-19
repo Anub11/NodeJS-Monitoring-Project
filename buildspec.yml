@@ -7,14 +7,14 @@ phases:
     commands:
       - echo Installing dependencies...
       - npm install
+
   build:
     commands:
       - echo Build complete
 
 artifacts:
+  base-directory: .  # Ensure you're zipping the full root directory
   files:
     - '**/*'
     - '.*'
   discard-paths: no
-
-
