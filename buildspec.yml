@@ -1,4 +1,5 @@
 version: 0.2
+
 phases:
   install:
     runtime-versions:
@@ -9,7 +10,11 @@ phases:
   build:
     commands:
       - echo Build complete
+
 artifacts:
   files:
     - '**/*'
+    - '.*'
+  discard-paths: no
+
 
